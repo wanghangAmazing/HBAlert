@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'BF8F7C3B4F7CFAB031F038476F2943E6'
+               BlueprintIdentifier = '8E09D095C2F12F219027FDF24B8125C6'
                BlueprintName = 'Pods-HBAlertControllerDemo'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-HBAlertControllerDemo.a'>

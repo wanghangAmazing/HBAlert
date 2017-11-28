@@ -15,7 +15,7 @@ target 'HBAlertControllerDemo' do
 end
 
 target 'HBAlert' do
-    
+
     pod 'Masonry'
     project '../HBAlertControllerDemo/HBAlert/HBAlert.project'
 end

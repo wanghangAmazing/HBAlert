@@ -65,7 +65,7 @@
 
 - (UIActivityIndicatorView *)activityView {
     if (!_activityView) {
-        _activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        _activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
         _activityView.hidesWhenStopped = YES;
     }
     return _activityView;
@@ -73,6 +73,7 @@
 
 + (HBAlertController *)showLoadingViewInViewController:(UIViewController *)viewController {
     LoadingView *loadingView = [LoadingView new];
+    loadingView.backgroundColor = [UIColor whiteColor];
     HBAlertController *alert = [[HBAlertController alloc] initWithPositon:HBAlertPositionCenter alertOffSet:CGPointZero];
     alert.customContentView = loadingView;
     [alert setupShowAnimation:HBAlertAnimationOptionCenterSpringIn dismissAnimation:HBAlertAnimationOptionAlpha];

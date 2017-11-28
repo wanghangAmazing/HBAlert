@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		691E860D54879E0A072851A9 /* libPods-HBAlertControllerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 995A51615D6E37E194C1BE67 /* libPods-HBAlertControllerDemo.a */; };
+		7D78F8AB1FCDA6CA000033F8 /* HBAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D78F8AC1FCDA6CA000033F8 /* HBAlert.framework */; };
 		7DC058F91FCC518F00364704 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC058F81FCC518F00364704 /* AppDelegate.m */; };
 		7DC058FC1FCC518F00364704 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC058FB1FCC518F00364704 /* ViewController.m */; };
 		7DC058FF1FCC518F00364704 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC058FD1FCC518F00364704 /* Main.storyboard */; };
 		7DC059011FCC518F00364704 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC059001FCC518F00364704 /* Assets.xcassets */; };
 		7DC059041FCC518F00364704 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DC059021FCC518F00364704 /* LaunchScreen.storyboard */; };
 		7DC059071FCC518F00364704 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC059061FCC518F00364704 /* main.m */; };
-		7DC0591F1FCC545900364704 /* HBAlert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DC059201FCC545900364704 /* HBAlert.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A19DC50DD5E7C2D0D2641FB /* Pods-HBAlertControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBAlertControllerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HBAlertControllerDemo/Pods-HBAlertControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		7D78F8AC1FCDA6CA000033F8 /* HBAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HBAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC058F41FCC518F00364704 /* HBAlertControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBAlertControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC058F71FCC518F00364704 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7DC058F81FCC518F00364704 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,7 +30,6 @@
 		7DC059031FCC518F00364704 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DC059051FCC518F00364704 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DC059061FCC518F00364704 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7DC059201FCC545900364704 /* HBAlert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = HBAlert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		995A51615D6E37E194C1BE67 /* libPods-HBAlertControllerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HBAlertControllerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFDD251697576FC06CF144D5 /* Pods-HBAlertControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBAlertControllerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HBAlertControllerDemo/Pods-HBAlertControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7DC0591F1FCC545900364704 /* HBAlert.framework in Frameworks */,
+				7D78F8AB1FCDA6CA000033F8 /* HBAlert.framework in Frameworks */,
 				691E860D54879E0A072851A9 /* libPods-HBAlertControllerDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,7 +59,7 @@
 		7865B1CD7E7DABDD6D1E5A58 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7DC059201FCC545900364704 /* HBAlert.framework */,
+				7D78F8AC1FCDA6CA000033F8 /* HBAlert.framework */,
 				995A51615D6E37E194C1BE67 /* libPods-HBAlertControllerDemo.a */,
 			);
 			name = Frameworks;
