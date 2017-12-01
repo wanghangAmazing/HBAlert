@@ -13,12 +13,12 @@
 ![](https://github.com/wanghangAmazing/HBAlert/blob/master/QQ20171129-231520-HD.gif?raw=true)
 
 
-##实现原理
+## 实现原理
 
 	通过自定义viewController的转场动画，来实现视图的弹出方式。
 
-##代码实例
-###Loading的效果：
+## 代码实例
+### Loading的效果：
 
 	LoadingView *loadingView = [LoadingView new];
     loadingView.backgroundColor = [UIColor whiteColor];
@@ -30,7 +30,7 @@
     [viewController presentViewController:alert animated:YES completion:nil];
     
 
-###分享视图：
+### 分享视图：
 
 		UIView *shareView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([[UIScreen mainScreen] bounds]), 200)];
         shareView.backgroundColor = [UIColor yellowColor];
@@ -46,7 +46,7 @@
         [self presentViewController:alertVC animated:YES completion:nil];
         
 
-###左侧栏：
+### 左侧栏：
 
 		UIView *leftView = [[UIView alloc] init];
         leftView.frame = CGRectMake(0, 0, 200, CGRectGetHeight([[UIScreen mainScreen] bounds]));
@@ -62,7 +62,7 @@
         [self presentViewController:alertVC animated:YES completion:nil];
         
 
-###下拉栏：
+### 下拉栏：
 
 		UIView *pullView = [[UIView alloc] init];
         [pullView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -79,7 +79,7 @@
         
         [self presentViewController:alertVC animated:YES completion:nil];
 
-###下载进度：
+### 下载进度：
 
 		UIView *contentView = [[UIView alloc] init];
         contentView.backgroundColor = [UIColor whiteColor];
@@ -119,5 +119,5 @@
         [self presentViewController:alertVC animated:YES completion:nil];
                
 
-##结束语
+## 结束语
 	此类并没有封装得很好，仅仅用于感兴趣的朋友参考实现方式！！！！
