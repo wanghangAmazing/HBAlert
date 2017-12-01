@@ -124,13 +124,15 @@
             make.bottom.mas_equalTo(-10);
         }];
         
-        [NSTimer scheduledTimerWithTimeInterval:0.1 repeats:YES block:^(NSTimer * _Nonnull timer) {
-            [progressView setProgress:progressView.progress + 0.01 animated:YES];
-            if (progressView.progress == 1) {
-                titleLabel.text = @"下载完成";
-                [timer invalidate];
-            }
-        }];
+        if (@available(iOS 10.0, *)) {
+            [NSTimer scheduledTimerWithTimeInterval:0.1 repeats:YES block:^(NSTimer * _Nonnull timer) {
+                [progressView setProgress:progressView.progress + 0.01 animated:YES];
+                if (progressView.progress == 1) {
+                    titleLabel.text = @"下载完成";
+                    [timer invalidate];
+                }
+            }];
+        }
         
         HBAlertController *alertVC = [[HBAlertController alloc] initWithPositon:HBAlertPositionCenter alertOffSet:CGPointZero];
         alertVC.customContentView = contentView;
