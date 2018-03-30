@@ -33,16 +33,6 @@
     [super presentationTransitionWillBegin];
 }
 
-
-- (UIView *)coverView {
-    if (!_coverView) {
-        _coverView = [[UIView alloc] init];
-        _coverView.backgroundColor = [UIColor blackColor];
-        _coverView.alpha = 0.3;
-    }
-    return _coverView;
-}
-
 - (void)currentViewControllerDiss {
     [self.presentedViewController dismissViewControllerAnimated:YES completion:nil];
 }

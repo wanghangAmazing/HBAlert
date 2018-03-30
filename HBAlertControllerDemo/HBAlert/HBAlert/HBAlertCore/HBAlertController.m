@@ -214,6 +214,16 @@
     return _alertContentScrollView;
 }
 
+//// 底部的蒙层
+- (UIView *)coverView {
+    if (!_coverView) {
+        _coverView = [[UIView alloc] init];
+        _coverView.backgroundColor = [UIColor blackColor];
+        _coverView.alpha = 0.3;
+    }
+    return _coverView;
+}
+
 #pragma mark - UIViewControllerTransitioningDelegate
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
