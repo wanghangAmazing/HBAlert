@@ -36,6 +36,8 @@ typedef NS_ENUM(NSInteger, HBAlertAnimationOption) {
 
 @interface HBAlertController : UIViewController
 
+
+- (instancetype)initWithPositon:(HBAlertPosition)position;
 /**
  初始化方法
  @param position 视图的位置

@@ -19,6 +19,10 @@
 
 @implementation HBAlertController
 
+- (instancetype)initWithPositon:(HBAlertPosition)position {
+    return [self initWithPositon:position alertOffSet:CGPointZero];
+}
+
 - (instancetype)initWithPositon:(HBAlertPosition)position alertOffSet:(CGPoint)alertOffSet {
     self = [super init];
     if (self) {
@@ -50,6 +54,16 @@
     [self removeNotifications];
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    !self.alertDidDismissHandler ?: self.alertDidDismissHandler();
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    !self.alertWillDismissHandler ?: self.alertWillDismissHandler();
+    [super viewWillDisappear:animated];
+}
+
 - (void)updateViewConstraints {
     //  更新约束
     CGPoint origin = [self viewOrigin];
@@ -63,10 +77,8 @@
 }
 
 - (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion {
-    !self.alertWillDismissHandler ?: self.alertWillDismissHandler();
     [super dismissViewControllerAnimated:flag completion:^{
         !completion ?: completion();
-        !self.alertDidDismissHandler ?: self.alertDidDismissHandler();
     }];
 }
 
